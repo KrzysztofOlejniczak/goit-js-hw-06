@@ -16,7 +16,7 @@ function createBoxes(number) {
     const color = getRandomHexColor();
     const box = `<div style="width:${30 + 10 * i}px; height:${
       30 + 10 * i
-    }px; background-color:${color}"></div>`;
+    }px; background-color:${color}; margin: 3px 0"></div>`;
     boxContainer.insertAdjacentHTML("beforeend", box);
   }
 }

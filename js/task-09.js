@@ -4,10 +4,10 @@ const btn = document.querySelector("button.change-color");
 const textToPrint = document.querySelector("span.color");
 const body = document.body;
 
-btn.addEventListener("click", changeColor);
+btn.addEventListener("click", (event) => changeColor(getRandomHexColor()));
 
-function changeColor() {
-  const color = getRandomHexColor();
+function changeColor(color) {
+  // const color = getRandomHexColor();
   body.style.backgroundColor = color;
   textToPrint.textContent = color;
 }
