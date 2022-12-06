@@ -7,7 +7,7 @@ const incrementBtn = document.querySelector('button[data-action="increment"]');
 
 const updateCounter = () => {
   console.log(`Counter: ${counterValue}`);
-  counter.innerHTML = counterValue;
+  counter.textContent = counterValue;
 };
 
 const decrementCounter = () => {
