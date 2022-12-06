@@ -6,18 +6,22 @@ const decrementBtn = document.querySelector('button[data-action="decrement"]');
 const incrementBtn = document.querySelector('button[data-action="increment"]');
 
 const updateCounter = () => {
-  console.log(counterValue);
+  console.log(`Counter: ${counterValue}`);
   counter.innerHTML = counterValue;
 };
 
-decrementBtn.addEventListener("click", () => {
+const decrementCounter = () => {
   console.log("Decrement button was clicked");
   counterValue--;
   updateCounter();
-});
+};
 
-incrementBtn.addEventListener("click", () => {
+const incrementCounter = () => {
   console.log("Increment button was clicked");
   counterValue++;
   updateCounter();
-});
+};
+
+decrementBtn.addEventListener("click", decrementCounter);
+
+incrementBtn.addEventListener("click", incrementCounter);
