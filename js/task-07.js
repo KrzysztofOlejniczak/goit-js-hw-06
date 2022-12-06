@@ -1,8 +1,8 @@
 "use strict";
 
 const inputSlider = document.querySelector("#font-size-control");
-const textContent = document.querySelector("#text");
+const textExample = document.querySelector("#text");
 inputSlider.addEventListener("input", (event) => {
   console.log(event.currentTarget.value);
-  textContent.style.fontSize = `${event.currentTarget.value}px`;
+  textExample.style.fontSize = `${event.currentTarget.value}px`;
 });
