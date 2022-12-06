@@ -5,9 +5,10 @@ const boxContainer = document.querySelector("div#boxes");
 const createBtn = document.querySelector("button[data-create");
 const destroyBtn = document.querySelector("button[data-destroy");
 
-createBtn.addEventListener("click", (event) =>
-  createBoxes(parseInt(input.value))
-);
+createBtn.addEventListener("click", (event) => {
+  destroyBoxes();
+  createBoxes(parseInt(input.value));
+});
 destroyBtn.addEventListener("click", destroyBoxes);
 
 function createBoxes(number) {
